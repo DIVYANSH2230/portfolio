@@ -1,0 +1,261 @@
+:root {
+
+  --bg: #f4f7fb;
+
+  --surface: #ffffff;
+
+  --ink: #0f2744;
+
+  --muted: #4a6278;
+
+  --accent: #1a4b8c;
+
+  --accent-hover: #c5a046;
+
+  --gold: #c5a046;
+
+  --border: #d8c98a;
+
+  --shadow: 0 10px 30px rgba(15, 39, 68, 0.1);
+
+}
+
+
+
+* {
+
+  box-sizing: border-box;
+
+}
+
+
+
+body {
+
+  margin: 0;
+
+  font-family: Georgia, "Times New Roman", serif;
+
+  color: var(--ink);
+
+  background: var(--bg);
+
+  line-height: 1.6;
+
+}
+
+
+
+header,
+
+main,
+
+footer {
+
+  width: min(720px, calc(100% - 2rem));
+
+  margin-left: auto;
+
+  margin-right: auto;
+
+}
+
+
+
+header {
+
+  padding: 3rem 0 1.5rem;
+
+  border-bottom: 2px solid var(--gold);
+
+  margin-bottom: 1.5rem;
+
+}
+
+
+
+h1 {
+
+  margin: 0 0 0.4rem;
+
+  font-size: clamp(2rem, 5vw, 2.8rem);
+
+  letter-spacing: 0.02em;
+
+  color: var(--accent);
+
+}
+
+
+
+.tagline {
+
+  margin: 0;
+
+  color: var(--muted);
+
+  font-size: 1.1rem;
+
+}
+
+
+
+main {
+
+  display: grid;
+
+  gap: 1.25rem;
+
+  padding-bottom: 2rem;
+
+}
+
+
+
+section {
+
+  background: var(--surface);
+
+  border: 1px solid var(--border);
+
+  border-radius: 12px;
+
+  padding: 1.4rem 1.5rem;
+
+  box-shadow: var(--shadow);
+
+}
+
+
+
+h2 {
+
+  margin: 0 0 0.8rem;
+
+  font-size: 1.25rem;
+
+  color: var(--gold);
+
+}
+
+
+
+p {
+
+  margin: 0 0 0.85rem;
+
+}
+
+
+
+p:last-child {
+
+  margin-bottom: 0;
+
+}
+
+
+
+ul {
+
+  margin: 0;
+
+  padding-left: 1.2rem;
+
+}
+
+
+
+li {
+
+  margin-bottom: 0.4rem;
+
+}
+
+
+
+.projects {
+
+  list-style: none;
+
+  padding-left: 0;
+
+}
+
+
+
+.projects li {
+
+  margin-bottom: 1rem;
+
+  padding-bottom: 1rem;
+
+  border-bottom: 1px solid var(--border);
+
+}
+
+
+
+.projects li:last-child {
+
+  margin-bottom: 0;
+
+  padding-bottom: 0;
+
+  border-bottom: none;
+
+}
+
+
+
+a {
+
+  color: var(--accent);
+
+  font-weight: 700;
+
+  text-decoration: none;
+
+  display: inline-block;
+
+  transition: transform 0.2s ease, color 0.2s ease;
+
+}
+
+
+
+a:hover {
+
+    text-decoration: underline;
+
+    transform: scale(1.02);
+
+}
+
+
+
+a:hover,
+
+a:focus-visible {
+
+  color: var(--accent-hover);
+
+}
+
+
+
+footer {
+
+  padding: 0 0 2.5rem;
+
+  color: var(--muted);
+
+  font-size: 0.95rem;
+
+  border-top: 2px solid var(--gold);
+
+  padding-top: 1.25rem;
+
+}
+
+
